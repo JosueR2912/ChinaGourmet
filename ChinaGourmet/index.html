@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>China Gourmet</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header >
+    <div class="menu container">
+      <input type="checkbox" id="menu">
+      <label for="menu">
+        <img src="img/menu.png" class="menu-icono" alt="">
+      </label>
+      <nav class="navbar">
+        <div class="menu-1">
+          <ul>
+            <li><a href="">Servicios</a></li>
+            <li><a href="#horario">Horario</a></li>
+            <li><a href="#products">Productos</a></li>
+          </ul>
+        </div>
+        <a href="#"><img src="img/logo.png" alt="" class="logo-2" herf></a>
+
+        <div class="menu-2">
+          <div class="socials">
+            <a href="https://www.facebook.com/chinagourmetbqto">
+              <div class="social">
+                <img src="img/s1.svg" alt="">
+              </div>
+            </a>
+            <a href="https://api.whatsapp.com/message/XPFSHLL3F4PPO1?autoload=1&app_absent=0">
+              <div class="social">
+                <img src="img/whatsapp-svgrepo-com.svg" alt="" style="height: 20px; width: 23px; margin-left: 7.5px;">
+              </div>
+            </a>
+            <a href="https://www.instagram.com/chinagourmetbqto/">
+              <div class="social">
+                <img src="img/s3.svg" alt="">
+              </div>
+            </a>
+          </div>
+        </div>
+        <ul>
+          <li class="submenu">
+            <img src="img/car.svg"  id="img-carrito">
+            <div id="carrito">
+              <table id="lista-carrito">
+                <thead>
+                  <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+              <a href="#" id="vaciar-carrito" class="btn-3">Vaciar carrito</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    
+    </div>
+
+    <div class="header-content container">
+
+      <div class="swiper mySwiper-1">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide" data-swiper-autoplay="2000">
+            <div class="slider">
+              <div class="slider-txt">
+                <h1>Arroz</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae iure tempora libero aspernatur
+                  voluptatibus, minima animi esse? Esse quo in unde ipsam beatae eius veniam excepturi? Similique
+                  assumenda nihil iure!
+                </p>
+                <div class="botones">
+                  <a href="" class="btn-1">Comprar</a>
+                  <a href="" class="btn-1">Menu</a>
+                </div>
+              </div>
+              <div class="slider-img">
+                <img src="img/SliderArroz.png" alt="">
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-slide" data-swiper-autoplay="2000">
+            <div class="slider">
+              <div class="slider-txt">
+                <h1>Pasta</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae iure tempora libero aspernatur
+                  voluptatibus, minima animi esse? Esse quo in unde ipsam beatae eius veniam excepturi? Similique
+                  assumenda nihil iure!
+                </p>
+                <div class="botones">
+                  <a href="" class="btn-1">Comprar</a>
+                  <a href="" class="btn-1">Menu</a>
+                </div>
+              </div>
+              <div class="slider-img">
+                <img src="img/pasta1.png" alt="">
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-slide" data-swiper-autoplay="2000">
+            <div class="slider">
+              <div class="slider-txt">
+                <h1>Lumpias</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae iure tempora libero aspernatur
+                  voluptatibus, minima animi esse? Esse quo in unde ipsam beatae eius veniam excepturi? Similique
+                  assumenda nihil iure!
+                </p>
+                <div class="botones">
+                  <a href="" class="btn-1">Comprar</a>
+                  <a href="" class="btn-1">Menu</a>
+                </div>
+              </div>
+              <div class="slider-img">
+                <img src="img/Sliderlumpia.png" alt="">
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+
+      </div>
+    </div>
+    <div class="scroll"></div>
+  </header>
+
+  <main class="products" id="products">
+    <div class="tabs container" >
+      <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1">
+      <label for="tab1">Arroces</label>
+
+      <div class="tab">
+        <div class=" swiper mySwiper-2" id="swiper1">
+          <div class="swiper-wrapper" id="lista-1">
+
+            <div class="swiper-slide">
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="img/food1.png" alt="">
+                </div>
+                <div class="product-txt">
+                  <h4 class="titulo">Producto</h4>
+                  <p>Calidad premium</p>
+                  <span class="precio">80.00$</span>
+                  <a href="#" class="agregar-carrito btn-3" data-id="1">Añadir+</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="img/food2.png" alt="">
+                </div>
+                <div class="product-txt">
+                  <h4 class="titulo">Producto</h4>
+                  <p>Calidad premium</p>
+                  <span class="precio">80.00$</span>
+                  <a href="#" class="agregar-carrito btn-3" data-id="2">Añadir+</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="img/food3.png" alt="">
+                </div>
+                <div class="product-txt">
+                  <h4 class="titulo">Producto</h4>
+                  <p>Calidad premium</p>
+                  <span class="precio">80.00$</span>
+                  <a href="#" class="agregar-carrito btn-3" data-id="3">Añadir+</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-button-next"> </div>
+          <div class="swiper-button-prev"> </div>
+        </div>
+      </div>
+
+      <input type="radio" name="tabs" id="tab2" checked="checked" class="tabInput" value="2">
+      <label for="tab2">Pastas</label>
+      <div class="tab">
+        <div class=" swiper mySwiper-2" id="swiper2">
+          <div class="swiper-wrapper" id="lista-2">
+
+            <div class="swiper-slide">
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="img/food4.png" alt="">
+                </div>
+                <div class="product-txt">
+                  <h4 class="titulo">Producto</h4>
+                  <p>Calidad premium</p>
+                  <span class="precio">80.00$</span>
+                  <a href="#" class="agregar-carrito btn-3" data-id="4">Añadir+</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="img/food5.png" alt="">
+                </div>
+                <div class="product-txt">
+                  <h4 class="titulo">Producto</h4>
+                  <p>Calidad premium</p>
+                  <span class="precio">80.00$</span>
+                  <a href="#" class="agregar-carrito btn-3" data-id="5">Añadir+</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="img/food6.png" alt="">
+                </div>
+                <div class="product-txt">
+                  <h4 class="titulo">Producto</h4>
+                  <p>Calidad premium</p>
+                  <span class="precio">80.00$</span>
+                  <a href="#" class="agregar-carrito btn-3" data-id="6">Añadir+</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-button-next"> </div>
+          <div class="swiper-button-prev"> </div>
+        </div>
+      </div>
+
+      <input type="radio" name="tabs" id="tab3" checked="checked" class="tabInput" value="3">
+      <label for="tab3">Variedades</label>
+      <div class="tab">
+        <div class=" swiper mySwiper-2" id="swiper3">
+          <div class="swiper-wrapper" id="lista-3">
+
+            <div class="swiper-slide">
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="img/food7.png" alt="">
+                </div>
+                <div class="product-txt">
+                  <h4 class="titulo">Producto</h4>
+                  <p>Calidad premium</p>
+                  <span class="precio">80.00$</span>
+                  <a href="#" class="agregar-carrito btn-3" data-id="7">Añadir+</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="img/food8.png" alt="">
+                </div>
+                <div class="product-txt">
+                  <h4 class="titulo">Producto</h4>
+                  <p>Calidad premium</p>
+                  <span class="precio">80.00$</span>
+                  <a href="#" class="agregar-carrito btn-3" data-id="8">Añadir+</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="img/food9.png" alt="">
+                </div>
+                <div class="product-txt">
+                  <h4 class="titulo">Producto</h4>
+                  <p>Calidad premium</p>
+                  <span class="precio">80.00$</span>
+                  <a href="#" class="agregar-carrito btn-3" data-id="9">Añadir+</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-button-next"> </div>
+          <div class="swiper-button-prev"> </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="info container">
+    <div class="info-img">
+      <img src="img/CHOP-SUEY.png" alt="">
+    </div>
+    <div class="info-txt">
+      <h2>Quienes Somos</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sapiente! Perspiciatis, vitae officia rerum sit
+        eligendi fuga, repellendus voluptate architecto aperiam sint odio molestiae. Atque quibusdam quasi laudantium
+        aliquid a!</p>
+          <a href="#" class="btn-2">Mas Informacion</a>
+    </div>
+  </section>
+
+  <section class="horario" id="horario">
+    <div class="horario-info container">
+      <h2>Ubicacion</h2>
+      <div class="horario-txt">
+        <div class="txt">
+          <h4>Direccion</h4>
+          <p>Urbanización Nueva Segovia, Carrera</p>
+          <p>2 entre Calles 2A y 3 No. 2A-13,</p>
+          <p>Barquisimeto 3001, Lara</p>
+        </div>
+        <div class="txt">
+          <h4>Horario</h4>
+          <p>Lunes a Viernes: 11am - 8pm</p>
+          <p>Sabado y Domingo: 11am - 10pm</p>
+        </div>
+        <div class="txt">
+          <h4>Telefonos</h4>
+          <p>0416-6516844</p>
+        </div>
+        <div class="txt">
+          <h4>Redes Sociales</h4>
+          <div class="socials">
+            <a href="https://www.facebook.com/chinagourmetbqto">
+              <div class="social">
+                <img src="img/s1.svg" alt="">
+              </div>
+            </a>
+            <a href="https://api.whatsapp.com/message/XPFSHLL3F4PPO1?autoload=1&app_absent=0">
+              <div class="social">
+                <img src="img/whatsapp-svgrepo-com.svg" alt="" style="height: 20px; width: 23px; margin-left: 7.5px;">
+              </div>
+            </a>
+            <a href="https://www.instagram.com/chinagourmetbqto/">
+              <div class="social">
+                <img src="img/s3.svg" alt="">
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="maps">
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1651.705738111958!2d-69.29615990213077!3d10.062951349702713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e876792df7fe19b%3A0xe8fc6105e6726690!2sChina%20Gourmet!5e0!3m2!1ses-419!2sve!4v1689022559033!5m2!1ses-419!2sve" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <footer class="footer">
+    <img class="logo-2" src="img/logo.png" alt="">
+    <div class="links">
+      <h4>lorem</h4>
+        <ul>
+          <li> <a href="#">lorem</a></li>
+          <li> <a href="#">lorem</a></li>
+          <li> <a href="#">lorem</a></li>
+          <li> <a href="#">lorem</a></li>
+          <li> <a href="#">lorem</a></li>
+        </ul>
+    </div>
+    <div class="links">
+      <h4>lorem</h4>
+        <ul>
+          <li> <a href="#">lorem</a></li>
+          <li> <a href="#">lorem</a></li>
+          <li> <a href="#">lorem</a></li>
+          <li> <a href="#">lorem</a></li>
+          <li> <a href="#">lorem</a></li>
+        </ul>
+    </div>
+
+  <div class="links">
+      <h4>lorem</h4>
+        <ul>
+          <li> <a href="#">lorem</a></li>
+          <li> <a href="#">lorem</a></li>
+          <li> <a href="#">lorem</a></li>
+          <li> <a href="#">lorem</a></li>
+          <li> <a href="#">lorem</a></li>
+        </ul>
+  </div>
+
+  <div class="links">
+      <h4>Redes Sociales</h4>
+      <div class="socials">
+        <a href="https://www.facebook.com/chinagourmetbqto">
+          <div class="social">
+            <img src="img/s1.svg" alt="">
+          </div>
+        </a>
+        <a href="https://api.whatsapp.com/message/XPFSHLL3F4PPO1?autoload=1&app_absent=0">
+          <div class="social">
+            <img src="img/whatsapp-svgrepo-com.svg" alt="" style="height: 20px; width: 23px; margin-left: 7.5px;">
+          </div>
+        </a>
+        <a href="https://www.instagram.com/chinagourmetbqto/">
+          <div class="social">
+            <img src="img/s3.svg" alt="">
+          </div>
+        </a>
+      </div>
+</div>
+    
+
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
