@@ -1,469 +1,444 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>YourMemoryGame</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>China Gourmet</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
 </head>
-<body onload="userAvailable() ,blockCards()">
-  <header class="header">
-    <nav class="nav">
-      <div class="logo-container logo nav-link">
-        <img src="img/logo.webp" alt="">
-      </div>
-      <button class="nav-toggle" aria-label="Abrir menú">
-        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
-      </button>
-      <ul class="nav-menu">
-        <li class="nav-menu-item">
-          <a href="#" class="nav-menu-link nav-link nav-menu-link_active">Home</a>
-        </li>
-        <li class="nav-menu-item">
-          <a href="#" class="nav-menu-link nav-link">About Us</a>
-        </li>
-        <li class="nav-menu-item">
-          <a href="#" class="nav-menu-link nav-link">Contact Us</a>
-        </li>
-        <li class="nav-menu-item" id="btn-login">
-          <a href="#" class="nav-menu-link nav-link"
-            >Login</a>
-        </li>
-      </ul>
-      <div class="sed">
-        <p id="nameUser">nombre</p>
-        <ul class="user" id="userBtn">
-          <li class="userl"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg></li>
+
+<body>
+  <header >
+    <div class="menu container">
+      <input type="checkbox" id="menu">
+      <label for="menu">
+        <img src="img/menu.png" class="menu-icono" alt="">
+      </label>
+      <nav class="navbar">
+        <div class="menu-1">
+          <ul>
+            <li><a href="">Servicios</a></li>
+            <li><a href="#horario">Horario</a></li>
+            <li><a href="#products">Productos</a></li>
+          </ul>
+        </div>
+        <a href="#"><img src="img/logo.png" alt="" class="logo-2" herf></a>
+
+        <div class="menu-2">
+          <div class="socials">
+            <a href="https://www.facebook.com/chinagourmetbqto">
+              <div class="social">
+                <img src="img/s1.svg" alt="">
+              </div>
+            </a>
+            <a href="https://api.whatsapp.com/message/XPFSHLL3F4PPO1?autoload=1&app_absent=0">
+              <div class="social">
+                <img src="img/whatsapp-svgrepo-com.svg" alt="" style="height: 20px; width: 23px; margin-left: 7.5px;">
+              </div>
+            </a>
+            <a href="https://www.instagram.com/chinagourmetbqto/">
+              <div class="social">
+                <img src="img/s3.svg" alt="">
+              </div>
+            </a>
+          </div>
+        </div>
+        <ul>
+          <li class="submenu">
+            <img src="img/car.svg"  id="img-carrito">
+            <div id="carrito">
+              <table id="lista-carrito">
+                <thead>
+                  <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+              <a href="#" id="vaciar-carrito" class="btn-3">Vaciar carrito</a>
+            </div>
+          </li>
         </ul>
+      </nav>
+    
+    </div>
+
+    <div class="header-content container">
+
+      <div class="swiper mySwiper-1">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide" data-swiper-autoplay="2000">
+            <div class="slider">
+              <div class="slider-txt">
+                <h1>Arroz</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae iure tempora libero aspernatur
+                  voluptatibus, minima animi esse? Esse quo in unde ipsam beatae eius veniam excepturi? Similique
+                  assumenda nihil iure!
+                </p>
+                <div class="botones">
+                  <a href="" class="btn-1">Comprar</a>
+                  <a href="" class="btn-1">Menu</a>
+                </div>
+              </div>
+              <div class="slider-img">
+                <img src="img/SliderArroz.png" alt="">
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-slide" data-swiper-autoplay="2000">
+            <div class="slider">
+              <div class="slider-txt">
+                <h1>Pasta</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae iure tempora libero aspernatur
+                  voluptatibus, minima animi esse? Esse quo in unde ipsam beatae eius veniam excepturi? Similique
+                  assumenda nihil iure!
+                </p>
+                <div class="botones">
+                  <a href="" class="btn-1">Comprar</a>
+                  <a href="" class="btn-1">Menu</a>
+                </div>
+              </div>
+              <div class="slider-img">
+                <img src="img/pasta1.png" alt="">
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-slide" data-swiper-autoplay="2000">
+            <div class="slider">
+              <div class="slider-txt">
+                <h1>Lumpias</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae iure tempora libero aspernatur
+                  voluptatibus, minima animi esse? Esse quo in unde ipsam beatae eius veniam excepturi? Similique
+                  assumenda nihil iure!
+                </p>
+                <div class="botones">
+                  <a href="" class="btn-1">Comprar</a>
+                  <a href="" class="btn-1">Menu</a>
+                </div>
+              </div>
+              <div class="slider-img">
+                <img src="img/Sliderlumpia.png" alt="">
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+
       </div>
-     
-    </nav>
+    </div>
+    <div class="scroll"></div>
   </header>
-  <main class="main-container">
-    <section class="principal-game">
-      <h1 class="title">Memory Game</h1>
-      <div id="msj">Great!!</div>
-      <button class="button" id="startButton" onclick="startGame()">Play it</button>
-      <div class="game-container">
-        <button class="card-container" id="pc1" onclick="uncover(1)">
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div class="back-content">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-zoom-question">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                    <path d="M21 21l-6 -6" />
-                    <path d="M10 13l0 .01" />
-                    <path d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474" />
-                  </svg>
 
+  <main class="products" id="products">
+    <div class="tabs container" >
+      <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1">
+      <label for="tab1">Arroces</label>
+
+      <div class="tab">
+        <div class=" swiper mySwiper-2" id="swiper1">
+          <div class="swiper-wrapper" id="lista-1">
+
+            <div class="swiper-slide">
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="img/food1.png" alt="">
+                </div>
+                <div class="product-txt">
+                  <h4 class="titulo">Producto</h4>
+                  <p>Calidad premium</p>
+                  <span class="precio">80.00$</span>
+                  <a href="#" class="agregar-carrito btn-3" data-id="1">Añadir+</a>
                 </div>
               </div>
-              <div class="front">
-
-              </div>
             </div>
-          </div>
-        </button>
-        <button class="card-container" id="pc2" onclick="uncover(2)">
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div class="back-content">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-zoom-question">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                    <path d="M21 21l-6 -6" />
-                    <path d="M10 13l0 .01" />
-                    <path d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474" />
-                  </svg>
 
+            <div class="swiper-slide">
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="img/food2.png" alt="">
+                </div>
+                <div class="product-txt">
+                  <h4 class="titulo">Producto</h4>
+                  <p>Calidad premium</p>
+                  <span class="precio">80.00$</span>
+                  <a href="#" class="agregar-carrito btn-3" data-id="2">Añadir+</a>
                 </div>
               </div>
-              <div class="front">
-
-              </div>
             </div>
-          </div>
-        </button>
-        <button class="card-container" id="pc3" onclick="uncover(3)">
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div class="back-content">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-zoom-question">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                    <path d="M21 21l-6 -6" />
-                    <path d="M10 13l0 .01" />
-                    <path d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474" />
-                  </svg>
 
+            <div class="swiper-slide">
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="img/food3.png" alt="">
+                </div>
+                <div class="product-txt">
+                  <h4 class="titulo">Producto</h4>
+                  <p>Calidad premium</p>
+                  <span class="precio">80.00$</span>
+                  <a href="#" class="agregar-carrito btn-3" data-id="3">Añadir+</a>
                 </div>
               </div>
-              <div class="front">
-
-              </div>
             </div>
+
           </div>
-        </button>
-        <button class="card-container" id="pc4" onclick="uncover(4)">
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div class="back-content">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-zoom-question">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                    <path d="M21 21l-6 -6" />
-                    <path d="M10 13l0 .01" />
-                    <path d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474" />
-                  </svg>
-
-                </div>
-              </div>
-              <div class="front">
-
-              </div>
-            </div>
-          </div>
-        </button>
-        <button class="card-container" id="pc5" onclick="uncover(5)">
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div class="back-content">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-zoom-question">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                    <path d="M21 21l-6 -6" />
-                    <path d="M10 13l0 .01" />
-                    <path d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474" />
-                  </svg>
-
-                </div>
-              </div>
-              <div class="front">
-
-              </div>
-            </div>
-          </div>
-        </button>
-        <button class="card-container" id="pc6" onclick="uncover(6)">
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div class="back-content">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-zoom-question">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                    <path d="M21 21l-6 -6" />
-                    <path d="M10 13l0 .01" />
-                    <path d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474" />
-                  </svg>
-
-                </div>
-              </div>
-              <div class="front">
-
-              </div>
-            </div>
-          </div>
-        </button>
-        <button class="card-container" id="pc7" onclick="uncover(7)">
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div class="back-content">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-zoom-question">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                    <path d="M21 21l-6 -6" />
-                    <path d="M10 13l0 .01" />
-                    <path d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474" />
-                  </svg>
-
-                </div>
-              </div>
-              <div class="front">
-
-              </div>
-            </div>
-          </div>
-        </button>
-        <button class="card-container" id="pc8" onclick="uncover(8)">
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div class="back-content">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-zoom-question">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                    <path d="M21 21l-6 -6" />
-                    <path d="M10 13l0 .01" />
-                    <path d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474" />
-                  </svg>
-
-                </div>
-              </div>
-              <div class="front">
-
-              </div>
-            </div>
-          </div>
-        </button>
-        <button class="card-container" id="pc9" onclick="uncover(9)">
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div class="back-content">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-zoom-question">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                    <path d="M21 21l-6 -6" />
-                    <path d="M10 13l0 .01" />
-                    <path d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474" />
-                  </svg>
-
-                </div>
-              </div>
-              <div class="front">
-
-
-              </div>
-            </div>
-          </div>
-        </button>
-        <button class="card-container" id="pc10" onclick="uncover(10)">
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div class="back-content">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-zoom-question">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                    <path d="M21 21l-6 -6" />
-                    <path d="M10 13l0 .01" />
-                    <path d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474" />
-                  </svg>
-
-                </div>
-              </div>
-              <div class="front">
-
-              </div>
-            </div>
-          </div>
-        </button>
-        <button class="card-container" id="pc11" onclick="uncover(11)">
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div class="back-content">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-zoom-question">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                    <path d="M21 21l-6 -6" />
-                    <path d="M10 13l0 .01" />
-                    <path d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474" />
-                  </svg>
-
-                </div>
-              </div>
-              <div class="front">
-
-              </div>
-            </div>
-          </div>
-        </button>
-        <button class="card-container" id="pc12" onclick="uncover(12)">
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div class="back-content">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-zoom-question">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                    <path d="M21 21l-6 -6" />
-                    <path d="M10 13l0 .01" />
-                    <path d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474" />
-                  </svg>
-
-                </div>
-              </div>
-              <div class="front">
-
-              </div>
-            </div>
-          </div>
-        </button>
-        <button class="card-container" id="pc13" onclick="uncover(13)">
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div class="back-content">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-zoom-question">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                    <path d="M21 21l-6 -6" />
-                    <path d="M10 13l0 .01" />
-                    <path d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474" />
-                  </svg>
-
-                </div>
-              </div>
-              <div class="front">
-
-              </div>
-            </div>
-          </div>
-        </button>
-        <button class="card-container" id="pc14" onclick="uncover(14)">
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div class="back-content">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-zoom-question">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                    <path d="M21 21l-6 -6" />
-                    <path d="M10 13l0 .01" />
-                    <path d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474" />
-                  </svg>
-
-                </div>
-              </div>
-              <div class="front">
-
-              </div>
-            </div>
-          </div>
-        </button>
-        <button class="card-container" id="pc15" onclick="uncover(15)">
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div class="back-content">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-zoom-question">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                    <path d="M21 21l-6 -6" />
-                    <path d="M10 13l0 .01" />
-                    <path d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474" />
-                  </svg>
-
-                </div>
-              </div>
-              <div class="front">
-
-              </div>
-            </div>
-          </div>
-        </button>
-        <button class="card-container" id="pc16" onclick="uncover(16)">
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div class="back-content">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-zoom-question">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                    <path d="M21 21l-6 -6" />
-                    <path d="M10 13l0 .01" />
-                    <path d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474" />
-                  </svg>
-
-                </div>
-              </div>
-              <div class="front">
-
-              </div>
-            </div>
-          </div>
-        </button>
-      </button>
-    </section>
-    <section class="statistics-game">
-
-      <div id="" class="statistic">Successes: <p id="successesCount">00</p>
+          <div class="swiper-button-next"> </div>
+          <div class="swiper-button-prev"> </div>
+        </div>
       </div>
-      <div id="" class="statistic">Time: <p id="timer">00s</p>
+
+      <input type="radio" name="tabs" id="tab2" checked="checked" class="tabInput" value="2">
+      <label for="tab2">Pastas</label>
+      <div class="tab">
+        <div class=" swiper mySwiper-2" id="swiper2">
+          <div class="swiper-wrapper" id="lista-2">
+
+            <div class="swiper-slide">
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="img/food4.png" alt="">
+                </div>
+                <div class="product-txt">
+                  <h4 class="titulo">Producto</h4>
+                  <p>Calidad premium</p>
+                  <span class="precio">80.00$</span>
+                  <a href="#" class="agregar-carrito btn-3" data-id="4">Añadir+</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="img/food5.png" alt="">
+                </div>
+                <div class="product-txt">
+                  <h4 class="titulo">Producto</h4>
+                  <p>Calidad premium</p>
+                  <span class="precio">80.00$</span>
+                  <a href="#" class="agregar-carrito btn-3" data-id="5">Añadir+</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="img/food6.png" alt="">
+                </div>
+                <div class="product-txt">
+                  <h4 class="titulo">Producto</h4>
+                  <p>Calidad premium</p>
+                  <span class="precio">80.00$</span>
+                  <a href="#" class="agregar-carrito btn-3" data-id="6">Añadir+</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-button-next"> </div>
+          <div class="swiper-button-prev"> </div>
+        </div>
       </div>
-      <div id="" class="statistic">Movements:<p id="movementsCount">00</p>
+
+      <input type="radio" name="tabs" id="tab3" checked="checked" class="tabInput" value="3">
+      <label for="tab3">Variedades</label>
+      <div class="tab">
+        <div class=" swiper mySwiper-2" id="swiper3">
+          <div class="swiper-wrapper" id="lista-3">
+
+            <div class="swiper-slide">
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="img/food7.png" alt="">
+                </div>
+                <div class="product-txt">
+                  <h4 class="titulo">Producto</h4>
+                  <p>Calidad premium</p>
+                  <span class="precio">80.00$</span>
+                  <a href="#" class="agregar-carrito btn-3" data-id="7">Añadir+</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="img/food8.png" alt="">
+                </div>
+                <div class="product-txt">
+                  <h4 class="titulo">Producto</h4>
+                  <p>Calidad premium</p>
+                  <span class="precio">80.00$</span>
+                  <a href="#" class="agregar-carrito btn-3" data-id="8">Añadir+</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product">
+                <div class="product-img">
+                  <h4>Nuevo</h4>
+                  <img src="img/food9.png" alt="">
+                </div>
+                <div class="product-txt">
+                  <h4 class="titulo">Producto</h4>
+                  <p>Calidad premium</p>
+                  <span class="precio">80.00$</span>
+                  <a href="#" class="agregar-carrito btn-3" data-id="9">Añadir+</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-button-next"> </div>
+          <div class="swiper-button-prev"> </div>
+        </div>
       </div>
-      <div id="" class="statistic">Record: <p id="record">00s</p>
-      </div>
-    </section>
+    </div>
   </main>
 
-  <!-- modal para Login -->
-  <section class="modal" id="modalLogin">
-    <div class="modalContent">
-      <div class="wrapper">
-        <div class="card-switch">
-            <label class="switch">
-               <input class="toggle" type="checkbox">
-               <span class="slider"></span>
-               <span class="card-side"></span>
-               <div class="flip-card__inner">
-                  <div class="flip-card__front">
-                     <div class="title-modal">Log in</div>
-                     <form action="" class="flip-card__form" id="form-login">
-                        <input type="email" placeholder="Email" name="email" class="flip-card__input">
-                        <button class="flip-card__btn" onclick="loginUser()">Let`s go!</button>
-                     </form>
-                  </div>
-                  <div class="flip-card__back">
-                     <div class="title-modal">Sign up</div>
-                     <form action="" class="flip-card__form" id="form-register">
-                        <input type="name" placeholder="Name" name="name" class="flip-card__input">
-                        <input type="email" placeholder="Email" name="email" class="flip-card__input">
-                        <button class="flip-card__btn" onclick="registerUser()">Confirm!</button>
-                     </form>
-                  </div>
-               </div>
-            </label>
-        </div>   
-   </div>
+  <section class="info container">
+    <div class="info-img">
+      <img src="img/CHOP-SUEY.png" alt="">
+    </div>
+    <div class="info-txt">
+      <h2>Quienes Somos</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sapiente! Perspiciatis, vitae officia rerum sit
+        eligendi fuga, repellendus voluptate architecto aperiam sint odio molestiae. Atque quibusdam quasi laudantium
+        aliquid a!</p>
+          <a href="#" class="btn-2">Mas Informacion</a>
     </div>
   </section>
-  <script src="main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
+  <section class="horario" id="horario">
+    <div class="horario-info container">
+      <h2>Ubicacion</h2>
+      <div class="horario-txt">
+        <div class="txt">
+          <h4>Direccion</h4>
+          <p>Urbanización Nueva Segovia, Carrera</p>
+          <p>2 entre Calles 2A y 3 No. 2A-13,</p>
+          <p>Barquisimeto 3001, Lara</p>
+        </div>
+        <div class="txt">
+          <h4>Horario</h4>
+          <p>Lunes a Viernes: 11am - 8pm</p>
+          <p>Sabado y Domingo: 11am - 10pm</p>
+        </div>
+        <div class="txt">
+          <h4>Telefonos</h4>
+          <p>0416-6516844</p>
+        </div>
+        <div class="txt">
+          <h4>Redes Sociales</h4>
+          <div class="socials">
+            <a href="https://www.facebook.com/chinagourmetbqto">
+              <div class="social">
+                <img src="img/s1.svg" alt="">
+              </div>
+            </a>
+            <a href="https://api.whatsapp.com/message/XPFSHLL3F4PPO1?autoload=1&app_absent=0">
+              <div class="social">
+                <img src="img/whatsapp-svgrepo-com.svg" alt="" style="height: 20px; width: 23px; margin-left: 7.5px;">
+              </div>
+            </a>
+            <a href="https://www.instagram.com/chinagourmetbqto/">
+              <div class="social">
+                <img src="img/s3.svg" alt="">
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="maps">
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1651.705738111958!2d-69.29615990213077!3d10.062951349702713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e876792df7fe19b%3A0xe8fc6105e6726690!2sChina%20Gourmet!5e0!3m2!1ses-419!2sve!4v1689022559033!5m2!1ses-419!2sve" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <footer class="footer">
+    <img class="logo-2" src="img/logo.png" alt="">
+    <div class="links">
+      <h4>lorem</h4>
+        <ul>
+          <li> <a href="#">lorem</a></li>
+          <li> <a href="#">lorem</a></li>
+          <li> <a href="#">lorem</a></li>
+          <li> <a href="#">lorem</a></li>
+          <li> <a href="#">lorem</a></li>
+        </ul>
+    </div>
+    <div class="links">
+      <h4>lorem</h4>
+        <ul>
+          <li> <a href="#">lorem</a></li>
+          <li> <a href="#">lorem</a></li>
+          <li> <a href="#">lorem</a></li>
+          <li> <a href="#">lorem</a></li>
+          <li> <a href="#">lorem</a></li>
+        </ul>
+    </div>
+
+  <div class="links">
+      <h4>lorem</h4>
+        <ul>
+          <li> <a href="#">lorem</a></li>
+          <li> <a href="#">lorem</a></li>
+          <li> <a href="#">lorem</a></li>
+          <li> <a href="#">lorem</a></li>
+          <li> <a href="#">lorem</a></li>
+        </ul>
+  </div>
+
+  <div class="links">
+      <h4>Redes Sociales</h4>
+      <div class="socials">
+        <a href="https://www.facebook.com/chinagourmetbqto">
+          <div class="social">
+            <img src="img/s1.svg" alt="">
+          </div>
+        </a>
+        <a href="https://api.whatsapp.com/message/XPFSHLL3F4PPO1?autoload=1&app_absent=0">
+          <div class="social">
+            <img src="img/whatsapp-svgrepo-com.svg" alt="" style="height: 20px; width: 23px; margin-left: 7.5px;">
+          </div>
+        </a>
+        <a href="https://www.instagram.com/chinagourmetbqto/">
+          <div class="social">
+            <img src="img/s3.svg" alt="">
+          </div>
+        </a>
+      </div>
+</div>
+    
+
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
